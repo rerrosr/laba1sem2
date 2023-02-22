@@ -7,7 +7,7 @@
 int enterWithValidation() {
     int a;
 
-    while (scanf_s("%d", &a) != 1 || a < 1 || getchar() != '\n') {
+    while (scanf("%d", &a) != 1 || a < 1 || getchar() != '\n') {
         printf("Error\n");
         rewind(stdin);
     }
@@ -18,7 +18,7 @@ int enterWithValidation() {
 int enterWithValidationForIndex(int index) {
     int a;
 
-    while (scanf_s("%d", &a) != 1 || a < 1 || a > index || getchar() != '\n') {
+    while (scanf("%d", &a) != 1 || a < 1 || a > index || getchar() != '\n') {
         printf("Error\n");
         rewind(stdin);
     }
