@@ -2,17 +2,6 @@
 #include <stdlib.h>
 #include "functions.h"
 
-//
-//int main() {
-//    Trips* trips = NULL;
-//    int size;
-//    numberOfStructure( size);
-//     createStructArr( &trips,  &size);
-//    initStruct( trips);
-//    printStructArray( trips, size);
-//    free(trips);
-//    return 0;
-//}
 int main() {
     int size;
 
@@ -29,22 +18,10 @@ int main() {
         switch (menu())
         {
             case 1:
-//                sortsongsName(song, size);
                  sort(song,  size);
                 printsong(pn, song);
                 break;
-//            case 2:
-//                sortsongsAuthor(song, size);
-//                printsong(pn, song);
-//                break;
-//            case 3:
-//                sortsongsYear(song, size);
-//                printsong(pn, song);
-//                break;
-//            case 4:
-//                sortsongsGenre(song, pn);
-//                printsong(pn, song);
-//                break;
+
             case 2:
                 deleteStruct(&song, pn);
                 printsong(pn, song);
