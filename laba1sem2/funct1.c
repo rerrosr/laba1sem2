@@ -212,10 +212,6 @@ int menu()
     int arg;
     printf("Enter:\n");
     printf("1 - To sort the structure \n");
-//    printf("1 - To sort the structure by song name\n");
-//    printf("2 - To sort the structure by author name\n");
-//    printf("3 - To sort the structure by year \n");
-//    printf("4 - To sort the structure by genre\n");
     printf("5 - To delete a structure by song number\n");
     printf("6 - To exit the program\n");
 
@@ -223,66 +219,3 @@ int menu()
     return arg;
 }
 
-
-// Menu to test functionality
-
-//int numberOfStructure(int size){
-//    printf("Enter the number of trips:");
-//    while (scanf_s("%d", &size) != 1 || getchar() != '\n' || size < 1) {
-//        printf("input error try again\n");
-//        rewind(stdin);
-//    }
-//    return size;
-//}
-//void charMemoryAllocate(char** string) {
-//    *string = (char*)malloc(255 * sizeof(char));
-//}
-//
-//void charMemoryRelocate(char** string) {
-//    int len = strlen(*string);
-//    *string = (char*)realloc(*string, len);
-//    (*string)[len - 1] = '\0';
-//}
-//
-//void printStructArray(Trips* trips, int count) {
-//    for (int i = 0; i < count; i++) {
-//        printf("%s\n", trips[i].arrival);
-//    }
-//}
-//
-//void initStruct(Trips* trips) {
-//	int userInput;
-//	printf("Arrival: ");
-//	charMemoryAllocate(&trips->arrival);
-//	fgets(trips->arrival, 255, stdin);
-//	charMemoryRelocate(&trips->arrival);
-//	printf("data: ");
-//	scanf_s(" %f", &trips->data);
-//	printf("passanger ");
-//	scanf_s(" %d", &userInput);
-//	printf("price ");
-//	scanf_s(" %d", &trips->price);
-//	rewind(stdin);
-//	printf("departure");
-//	charMemoryAllocate(&trips->departure);
-//	fflush(stdin);
-//	fgets(trips->departure, 255, stdin);
-//	charMemoryRelocate(&trips->departure);
-//
-//}
-//void createStructArr(Trips** trips, int* count) {
-//    printf("Enter the number of trips: ");
-//    while ((scanf_s(" %d", count)) != 1 || getchar() != '\n' || *count <= 0) {
-//        printf("try again ");
-//        rewind(stdin);
-//    }
-//    *trips = (Trips*)malloc((*count) * sizeof(Trips));
-//    for (int i = 0; i < *count; i++) {
-//        printf("initialisation %d structure in array\n\n", i + 1);
-//        initStruct(*trips + i);
-//        printf("\nnext!");
-//        Sleep(3000);
-//        system("cls");
-//        rewind(stdin);
-//    }
-//}
