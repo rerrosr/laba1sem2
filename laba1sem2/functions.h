@@ -38,6 +38,4 @@ void deleteStruct(struct Songs** song, int* size);
 void sort(struct Songs *song, int size);
 int enterWithValidationForIndex(int index);
 int enterWithValidation();
-
-//void displayMenu();
 #endif //LABA1SEM2_FUNCTIONS_H
